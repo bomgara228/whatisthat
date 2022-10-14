@@ -1,0 +1,38 @@
+@1bcolor:rgb(171, 7, 197);
+@2bcolor: rgb(255, 221, 255);
+@1tcol: rgb(255,255,255);
+@2tcol:rgb(171, 7, 197);
+
+.background() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.flex(@direction, @justify, @align, @wrap) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+    flex-wrap: @wrap;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+}
+.header {
+    position: sticky;
+    background-color: @1bcolor;
+    h3 {
+        color: @1tcol;
+    }
+    &-right {
+        p {
+            color: @1tcol;
+            display: inline-block;
+            .flex(row, center, end, no-wrap)
+        }
+    }
+}

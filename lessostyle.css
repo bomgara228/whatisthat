@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+}
+
+.header {
+	position: sticky;
+	background-color: #ab07c5;
+}
+
+.header h3 {
+	color: #ffffff;
+    display: float;
+    float: left;
+}
+
+.header-right p {
+	color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: end;
+	flex-wrap: no-wrap;
+}
